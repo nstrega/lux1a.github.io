@@ -13,8 +13,8 @@
     Your browser does not support the audio element.
     </audio>
    
-   <div class="image" id="image" onclick="playAudio();>
-    <video autoplay="" loop onclick="this.paused ? this.play() : this.pause();" src="/dance.mp4">
+   <div class="image" id="image">
+    <video autoplay="" loop onclick="this.paused ? this.play();playAudio() : this.pause();pauseAudio();" src="/dance.mp4">
   </div>
                                                                                  
 </body>
@@ -64,6 +64,14 @@
     y.play();
   else
     y.pause();
+    }
+                                               
+                                               function pauseAudio() { 
+      var y = document.getElementById("myAudio"); 
+  if (y.paused)
+    y.pause();
+  else
+    y.play();
     }
     
 </script>
