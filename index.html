@@ -6,23 +6,25 @@
 <html>
 
 <body>
-
+   <div class="button" onclick="myFunction();playAudio();">
+   </div>
    
-   <audio autoplay loop id="myAudio">
+   <audio loop id="myAudio">
     <source src="./Nightcore%20-%20ily%20(i%20love%20you%20baby)%20Lyrics.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
     </audio>
    
-   <div onclick="playAudio();" class="image" id="image">
+   <div class="image" id="image">
     <img src="/1495148772853.gif">
   </div>
-                                                                                 
+                                                                              
 </body>
 
 <style>
     * {
         margin: 0 0 0 0;
         padding: 0 0 0 0;
+        overflow: hidden;
     }
    
    body {
@@ -42,8 +44,9 @@
    .image {
       position: absolute;
       bottom: 0%;
-      right: 42%;
-      width: 16%;
+      right: 35%;
+      width: 30%;
+      height: auto;
   }
   
   .image img {
@@ -57,6 +60,17 @@
 </html>
 
 <script>
+   
+   document.getElementById("image").style.display = "none";
+
+function myFunction() {
+  var x = document.getElementById("image");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
     
     function playAudio() { 
       var y = document.getElementById("myAudio"); 
@@ -65,14 +79,5 @@
   else
     y.pause();
     }
-                                               
-                                               function pauseAudio() { 
-      var y = document.getElementById("myAudio"); 
-  if (y.paused)
-    y.pause();
-  else
-    y.play();
-    }
     
 </script>
-   
