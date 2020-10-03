@@ -6,15 +6,15 @@
 <html>
 
 <body>
-   <div class="button" onclick="playAudio();">
-   </div>
+   //<div class="button" onclick="playAudio();">//
+   //</div>//
    
    <audio loop id="myAudio">
     <source src="./Nightcore%20-%20ily%20(i%20love%20you%20baby)%20Lyrics.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
     </audio>
    
-   <div class="image" id="image">
+   <div class="image" id="image" onclick="playAudio();>
     <video autoplay="" loop="" onclick="this.paused ? this.play() : this.pause();" id="myVideo" src="dance.mp4">
   </div>
                                                                                  
@@ -24,7 +24,6 @@
     * {
         margin: 0 0 0 0;
         padding: 0 0 0 0;
-        overflow: hidden;
     }
    
    body {
@@ -44,7 +43,7 @@
    .image {
       position: absolute;
       bottom: 0%;
-      right: 42%;
+      right: 32%;
       width: 16%;
   }
   
