@@ -51,8 +51,16 @@
   
   .image img {
       max-width: 70%;
-      min-width: 70%;
+      min-width: 100%;
   }
+   
+    @media only screen and (max-width: 600px) {
+       .image {
+      right: 25%;
+      width: 50%;
+      height: auto;
+  }
+   }
 </style>
 
 </html>
