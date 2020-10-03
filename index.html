@@ -6,18 +6,16 @@
 <html>
 
 <body>
-   <div class="button" onclick="myFunction();playAudio();" style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+   <div class="button" onclick="myFunction();playAudio();"x>
+      <div class="image" id="image">
+    <img src="/1495148772853.gif">
+  </div>
    </div>
    
    <audio loop id="myAudio">
     <source src="./Nightcore%20-%20ily%20(i%20love%20you%20baby)%20Lyrics.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
-    </audio>
-   
-   <div class="image" id="image">
-    <img src="/1495148772853.gif">
-  </div>
-                                                                              
+    </audio>                                                                  
 </body>
 
 <style>
@@ -38,6 +36,10 @@
       top: 0%;
       left: 0%;
       z-index: 10;
+      display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
    }
 
    .image {
