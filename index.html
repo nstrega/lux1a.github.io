@@ -6,7 +6,7 @@
 <html>
 
 <body>
-   <div class="button" onclick="myFunction();playAudio();">
+   <div class="button" onclick="myFunction();playAudio();" style="display:flex; flex-direction: row; justify-content: center; align-items: center">
    </div>
    
    <audio loop id="myAudio">
@@ -24,7 +24,6 @@
     * {
         margin: 0 0 0 0;
         padding: 0 0 0 0;
-        overflow: hidden;
     }
    
    body {
@@ -42,16 +41,9 @@
    }
 
    .image {
-      position: absolute;
       bottom: 0%;
-      right: 46%;
       width: 24%;
       height: auto;
-  }
-  
-  .image img {
-      min-width: 70%;
-      min-height: 100%;
   }
    
     @media only screen and (max-width: 600px) {
