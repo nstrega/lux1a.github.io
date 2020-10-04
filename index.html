@@ -6,7 +6,7 @@
 <html>
 
 <body>
-   <div class="button" onclick="myFunction();playAudio();"x>
+   <div class="button" onclick="playAudio();">
       <div class="image" id="image">
     <img src="/1495148772853.gif">
   </div>
@@ -53,17 +53,6 @@
 
 <script>
    
-   document.getElementById("image").style.display = "none";
-
-function myFunction() {
-  var x = document.getElementById("image");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-    
     function playAudio() { 
       var y = document.getElementById("myAudio"); 
   if (y.paused)
