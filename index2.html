@@ -6,7 +6,7 @@
 </head>
 <html>
 <body>
-<div class="logoDiv" onclick="video.paused ? video.play() : video.pause();">
+<div class="logoDiv" id="logoDiv" onclick="video.paused ? video.play() : video.pause();">
          <svg class="SVGLogo" xmlns="http://www.w3.org/2000/svg" width="330" height="91.1" viewBox="0 0 330 91.1">
             <g class="Luxia" id="Luxia" transform="translate(-0.1)">
                <g id="U">
@@ -35,7 +35,7 @@
                      d="M325.7,35.5h-1.1a2.9,2.9,0,0,0-2.3,1L310.2,48.6a3.445,3.445,0,0,0-1,2.3V66.4a2.9,2.9,0,0,1-1,2.3L294,83a3.445,3.445,0,0,0-1,2.3v2.3a2.9,2.9,0,0,0,1,2.3h0a3.445,3.445,0,0,0,2.3,1h18.2a2.9,2.9,0,0,0,2.3-1L329,77.8a3.445,3.445,0,0,0,1-2.3V39.8a2.9,2.9,0,0,0-1-2.3l-1-1A3.445,3.445,0,0,0,325.7,35.5Z"
                      fill="#FFFFFF" />
                </g>
-               <g id="X" onclick="playAudio();showGif();">
+               <g id="X" onclick="blur();">
                   <path id="Path_7" data-name="Path 7"
                      d="M220.6,47.8a3.118,3.118,0,0,0-2.1-.9h-2.7a2.878,2.878,0,0,0-2.1.9L207,54.5a3.118,3.118,0,0,0-.9,2.1v1.8a2.878,2.878,0,0,0,.9,2.1l4.9,4.9a3.118,3.118,0,0,0,2.1.9h17.8a2.9,2.9,0,0,0,2-5Z"
                      fill="#FFFFFF" />
@@ -332,8 +332,14 @@ document.getElementById('myVideo').play();
    
     
  var video=document.getElementById('myVideo') ;
-           function mute() {
-                    if(video
+ var blurDiv=document.getElementById('logoDiv');
+           
+ function blur() {
+         if(logoDiv.style.backdrop-filter == 5px) {
+                  logoDiv.style.backdrop-filter == 0px:
+                  else {
+                           logoDiv.style.backdrop-filter == 5px:
+                  }
 
 $(video).on("click", function(e){
   video.muted = !video.muted;
