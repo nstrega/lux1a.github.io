@@ -6,7 +6,7 @@
 </head>
 <html>
 <body>
-<div class="logoDiv">
+<div class="logoDiv" onclick="video.paused ? video.play() : video.pause();">
          <svg class="SVGLogo" xmlns="http://www.w3.org/2000/svg" width="330" height="91.1" viewBox="0 0 330 91.1">
             <g class="Luxia" id="Luxia" transform="translate(-0.1)">
                <g id="U">
@@ -331,7 +331,9 @@ body {
 document.getElementById('myVideo').play();
    
     
- var video=document.getElementById('myVideo') ;   
+ var video=document.getElementById('myVideo') ;
+           function mute() {
+                    if(video
 
 $(video).on("click", function(e){
   video.muted = !video.muted;
