@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <title>Luxia</title>
@@ -417,9 +418,19 @@ document.getElementById("demo").innerHTML = activeVideoUrl;
            }
    
    function noBlur() {
-                    location = "https://luxia.ch/noBlur"
+                    var blur = document.getElementById("logoDiv");
+                    var logo = document.getElementById("SVGLogo");
+                    if(blur.style.opacity == 0.2) {
+                     blur.style.opacity = "1";
+                    logo.style.transform = "scale(1)";
+                    video.pause();
+                    } else {
+                        blur.style.opacity = "0.2";
+                    logo.style.transform = "scale(0.75)";
+                    video.pause();
+                    }
            }
-           
+
 </script>
   </body>
 </html>
