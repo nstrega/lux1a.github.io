@@ -5,15 +5,8 @@
 </head>
 <html>
 <body>
-         //if(document.getElementById("logoDiv").style.opacity == "0.1") {
-                          //   document.getElementById("logoDiv").style.opacity = "1";
-                         //    document.getElementById("SVGLogo").style.transform = "scale(1)";
-                             
-               //     } else {
-                        //     document.getElementById("logoDiv").style.opacity = "0.1";
-                       //      document.getElementById("SVGLogo").style.transform = "scale(0.5)";
-                 //   }
-<div class="logoDiv" id="logoDiv" onclick="blur();">
+         
+<div class="logoDiv" id="logoDiv" onclick="video.paused ? video.play() : video.pause();">
          <svg class="SVGLogo" id="SVGLogo" xmlns="http://www.w3.org/2000/svg" width="330" height="91.1" viewBox="0 0 330 91.1">
             <g class="Luxia" id="Luxia" transform="translate(-0.1)">
                <g id="U">
@@ -426,8 +419,14 @@ document.getElementById("demo").innerHTML = activeVideoUrl;
            }
            
            function blur() {
-             document.getElementById("logoDiv").style.opacity = "0.1";
-             document.getElementById("SVGLogo").style.transform = "scale(0.5)";
+            if(document.getElementById("logoDiv").style.opacity == "0.1") {
+                             document.getElementById("logoDiv").style.opacity = "1";
+                             document.getElementById("SVGLogo").style.transform = "scale(1)";
+                             
+                    } else {
+                             document.getElementById("logoDiv").style.opacity = "0.1";
+                             document.getElementById("SVGLogo").style.transform = "scale(0.5)";
+                   }
            }
                     
    
