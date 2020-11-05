@@ -150,6 +150,7 @@ filter: blur(0px);
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
+   filter: blur(10px);
 }
  @media only screen and (max-width: 800px) {
  filter: blur(40px);
@@ -424,7 +425,12 @@ document.getElementById("demo").innerHTML = activeVideoUrl;
                     if(blur.style.opacity == 0.2) {
                      blur.style.opacity = "1";
                     logo.style.transform = "scale(1.2)";
-                     altBlur.style.filter = "blur(40px)";
+                     if (screen.width > 800px) {
+                      altBlur.style.filter = "blur(10px)";
+                     } else {
+                      altBlur.style.filter = "blur(40px)";
+                     }
+                     
                     video.pause();
                     } else {
                         blur.style.opacity = "0.2";
