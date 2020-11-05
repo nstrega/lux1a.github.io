@@ -64,7 +64,7 @@ body {
          z-index: 1;
          position: absolute;
          top: 0%;
-  backdrop-filter: blur(0px); 
+  backdrop-filter: blur(30px); 
          left: 0%;
       }
 
@@ -135,7 +135,7 @@ body {
   min-width: 100%; 
   min-height: 100%; 
   object-fit: cover;
-filter: blur(40px);
+filter: blur(0px);
 }
 
 
@@ -151,6 +151,9 @@ filter: blur(40px);
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
 }
+ @media only screen and (max-width: 800px) {
+ filter: blur(40px);
+  }
 
 }
 </style>
