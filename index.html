@@ -64,7 +64,7 @@ body {
          z-index: 1;
          position: absolute;
          top: 0%;
-  backdrop-filter: blur(30px); 
+  backdrop-filter: blur(40px); 
          left: 0%;
       }
 
@@ -420,13 +420,16 @@ document.getElementById("demo").innerHTML = activeVideoUrl;
    function noBlur() {
                     var blur = document.getElementById("logoDiv");
                     var logo = document.getElementById("SVGLogo");
+    var altBlur = document.getElementById("myVideo");
                     if(blur.style.opacity == 0.2) {
                      blur.style.opacity = "1";
-                    logo.style.transform = "scale(1.4)";
+                    logo.style.transform = "scale(1.2)";
+                     altBlur.style.filter = "blur(40px)";
                     video.pause();
                     } else {
                         blur.style.opacity = "0.2";
                     logo.style.transform = "scale(0.9)";
+                     altBlur.style.filter = "blur(0px)";
                     video.pause();
                     }
            }
