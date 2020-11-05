@@ -3,9 +3,6 @@
 <html>
 <title>Luxia</title>
 <head>
- <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 </head>
 <html>
 <body>
@@ -53,13 +50,6 @@
             </g>
          </svg>
       </div>
-       <div class="fullscreen">
-<video playsinline autoplay id="myVideo" onended="reload();">
-    <source src="https://i.imgur.com/p0AB1Bl.mp4" type='video/mp4'>
-  <source src="https://i.imgur.com/p0AB1Bl.mp4" type='video/webm' /> 
-</video>
-  </div>
-  
 <style>
 *{
 transition: all 0.15s ease-in-out;
@@ -148,6 +138,7 @@ body {
 filter: blur(0px);
 }
 
+
 @media only screen and (max-width: 5000px) {
   #myVideo {
  position: fixed;
@@ -164,41 +155,19 @@ filter: blur(0px);
  @media only screen and (max-width: 800px) {
  filter: blur(40px);
   }
+
 }
 </style>
+ <div class="fullscreen">
+<video playsinline autoplay id="myVideo" onended="reload();">
+    <source src="https://i.imgur.com/p0AB1Bl.mp4" type='video/mp4'>
+  <source src="https://i.imgur.com/p0AB1Bl.mp4" type='video/webm' /> 
+</video>
+  </div>
 
-<script>
+  <script>
    var videoStorage = [ 
-     
-     'https://imgur.com/2qyNSv9.mp4',
-     'https://i.imgur.com/xljEloa.mp4',
-     'https://i.imgur.com/enOaZB3.mp4',
-     'https://i.imgur.com/T1x8u4O.mp4',
-     'https://i.imgur.com/mT5HMKl.mp4',
-     'https://i.imgur.com/555f6Tt.mp4',
-     'https://i.imgur.com/bTPGgWZ.mp4',
-     'https://i.imgur.com/8IlW2W3.mp4',
-     'https://i.imgur.com/KM0RHkc.mp4',
-     'https://i.imgur.com/82dFcVm.mp4',
-     'https://i.imgur.com/0l6lalK.mp4',
-     'https://i.imgur.com/xqJqb7q.mp4',
-     'https://i.imgur.com/SgFK4qa.mp4',
-     'https://i.imgur.com/iccA18T.mp4',
-     'https://i.imgur.com/AZkf0sf.mp4',
-     'https://i.imgur.com/TkNiCsc.mp4',
-     'https://i.imgur.com/H1Op4qn.mp4',
-     'https://i.imgur.com/qeVPxra.mp4',
-     'https://i.imgur.com/4Gs05ho.mp4',
-     'https://i.imgur.com/kFjKgor.mp4',
-     'https://i.imgur.com/mjnnKgr.mp4',
-     'https://i.imgur.com/JelzHtl.mp4',
-     'https://i.imgur.com/lqyKsVh.mp4',
-     'https://i.imgur.com/WEfUZB3.mp4',
-     'https://i.imgur.com/f4NjZEW.mp4',
-     'https://i.imgur.com/DSl52zj.mp4',
-     'https://i.imgur.com/drzcINq.mp4',
-     'https://i.imgur.com/p5LrTsv.mp4',
-     'https://i.imgur.com/TnDrWqX.mp4'
+     'https://imgur.com/2qyNSv9.mp4','https://i.imgur.com/xljEloa.mp4','https://i.imgur.com/enOaZB3.mp4','https://i.imgur.com/T1x8u4O.mp4','https://i.imgur.com/mT5HMKl.mp4','https://i.imgur.com/555f6Tt.mp4','https://i.imgur.com/bTPGgWZ.mp4','https://i.imgur.com/8IlW2W3.mp4','https://i.imgur.com/KM0RHkc.mp4','https://i.imgur.com/82dFcVm.mp4','https://i.imgur.com/0l6lalK.mp4','https://i.imgur.com/xqJqb7q.mp4','https://i.imgur.com/SgFK4qa.mp4','https://i.imgur.com/iccA18T.mp4','https://i.imgur.com/AZkf0sf.mp4','https://i.imgur.com/TkNiCsc.mp4','https://i.imgur.com/H1Op4qn.mp4','https://i.imgur.com/qeVPxra.mp4','https://i.imgur.com/4Gs05ho.mp4','https://i.imgur.com/kFjKgor.mp4','https://i.imgur.com/mjnnKgr.mp4','https://i.imgur.com/JelzHtl.mp4','https://i.imgur.com/lqyKsVh.mp4','https://i.imgur.com/WEfUZB3.mp4','https://i.imgur.com/f4NjZEW.mp4','https://i.imgur.com/DSl52zj.mp4','https://i.imgur.com/drzcINq.mp4','https://i.imgur.com/p5LrTsv.mp4','https://i.imgur.com/TnDrWqX.mp4'
 ],
     video = document.querySelector('video'),
     activeVideoUrl = videoStorage[Math.round(Math.random() * (videoStorage.length - 1))];   
@@ -210,8 +179,9 @@ filter: blur(0px);
 }
     
 document.getElementById('myVideo').play();
-
-var video=document.getElementById('myVideo') ;
+   
+    
+ var video=document.getElementById('myVideo') ;
 
 $(video).on("click", function(e){
   video.muted = !video.muted;
@@ -259,4 +229,6 @@ document.getElementById("demo").innerHTML = activeVideoUrl;
 
 </script>
   </body>
+</html>
+
 </html>
