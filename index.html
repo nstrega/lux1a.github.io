@@ -8,6 +8,8 @@
 </head>
 <html>
 <body>
+<div class="loopDiv" id="loopDiv">
+</div>
  <div class="clipWrapper" onclick="video.paused ? video.play() : video.pause();">
  <div class="svg-clipped">
         <svg xmlns="http://www.w3.org/2000/svg" width="330" height="91.1" viewBox="0 0 330 91.1">
@@ -46,7 +48,7 @@
         </svg>
         </div>
  </div>
- <div class="SVGDiv">
+ <div class="SVGDiv" id="SVGDiv">
  <svg class="SVGLogo" id="SVGLogo" xmlns="http://www.w3.org/2000/svg" width="330" height="91.1" viewBox="0 0 330 91.1">
             <g class="Luxia" id="Luxia" transform="translate(-0.1)">
                <g id="U" onclick="">
@@ -149,6 +151,22 @@ background: none;
             transform: scale(2);
             }
             
+            .loopDiv {
+             position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 21;
+  pointer-events: none;
+            }
+            
+            .loopDiv .div{
+             position: absolute;
+  bottom: 0%;
+  left: 35%;
+            }
+            
             .SVGLogo .Luxia #L:hover #Path_2 {
          		fill: rgb(255, 255, 255);
         opacity: 80%
@@ -232,6 +250,23 @@ background: none;
   </div>
 
   <script>
+  
+            var div = document.createElement("div");
+div.style.width = "95px";
+div.style.height = "23px";
+div.style.lineHeight = "23px";
+div.style.color = "rgba(255, 255, 255, 0.7)";
+div.style.opacity = "0";
+div.style.borderRadius = "0px 0px 10px 0px";
+div.innerHTML = "Looping";
+div.style.fontFamily = "Sans-Serif";
+div.style.textDecoration = "none";
+div.style.userSelect = "none";
+div.style.textAlign = "center";
+div.style.backdropFilter = "blur(45px) brightness(130%) saturate(115%)";
+document.getElementById("loopDiv").appendChild(div);
+  
+  
     var videoStorage = [ 
      'https://imgur.com/2qyNSv9.mp4','https://i.imgur.com/xljEloa.mp4','https://i.imgur.com/enOaZB3.mp4','https://i.imgur.com/T1x8u4O.mp4','https://i.imgur.com/mT5HMKl.mp4','https://i.imgur.com/555f6Tt.mp4','https://i.imgur.com/bTPGgWZ.mp4','https://i.imgur.com/8IlW2W3.mp4','https://i.imgur.com/KM0RHkc.mp4','https://i.imgur.com/82dFcVm.mp4','https://i.imgur.com/0l6lalK.mp4','https://i.imgur.com/xqJqb7q.mp4','https://i.imgur.com/SgFK4qa.mp4','https://i.imgur.com/iccA18T.mp4','https://i.imgur.com/AZkf0sf.mp4','https://i.imgur.com/TkNiCsc.mp4','https://i.imgur.com/H1Op4qn.mp4','https://i.imgur.com/qeVPxra.mp4','https://i.imgur.com/4Gs05ho.mp4','https://i.imgur.com/kFjKgor.mp4','https://i.imgur.com/mjnnKgr.mp4','https://i.imgur.com/JelzHtl.mp4','https://i.imgur.com/lqyKsVh.mp4','https://i.imgur.com/WEfUZB3.mp4','https://i.imgur.com/f4NjZEW.mp4','https://i.imgur.com/DSl52zj.mp4','https://i.imgur.com/drzcINq.mp4','https://i.imgur.com/p5LrTsv.mp4','https://i.imgur.com/TnDrWqX.mp4',
     'https://imgur.com/LgvX22n.mp4',
@@ -282,10 +317,15 @@ document.getElementById("demo").innerHTML = activeVideoUrl;
           var currentAttribute = document.getElementById("myVideo").getAttribute("onended");
           if(currentAttribute == "replay()") {
           document.getElementById("myVideo").setAttribute("onended", "next()");
+div.style.width = "95px";
+div.style.height = "23px";
+div.style.opacity = "0";
           
           } else {
           document.getElementById("myVideo").setAttribute("onended", "replay()");
-          
+div.style.width = "100px";
+div.style.height = "23px";
+div.style.opacity = "1";
           }
   }
   
