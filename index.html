@@ -251,17 +251,20 @@ background: none;
 
   <script>
   
-            var div = document.createElement("div");
-div.style.width = "95px";
-div.style.height = "23px";
+           div.style.width = "50%";
+div.style.top = "0%";
+div.style.position = "absolute";
+div.style.height = "20px";
+div.style.left = "25%";
 div.style.lineHeight = "23px";
 div.style.color = "rgba(255, 255, 255, 0.7)";
 div.style.opacity = "0";
-div.style.borderRadius = "0px 0px 10px 0px";
+div.style.borderRadius = "0px 0px 10px 10px";
 div.innerHTML = "Loop";
 div.style.fontFamily = "Sans-Serif";
 div.style.textDecoration = "none";
 div.style.userSelect = "none";
+div.style.fontSize = "19px";
 div.style.textAlign = "center";
 div.style.backdropFilter = "blur(45px) brightness(80%) saturate(90%)";
 document.getElementById("loopDiv").appendChild(div);
@@ -317,14 +320,16 @@ document.getElementById("demo").innerHTML = activeVideoUrl;
           var currentAttribute = document.getElementById("myVideo").getAttribute("onended");
           if(currentAttribute == "replay()") {
           document.getElementById("myVideo").setAttribute("onended", "next()");
-div.style.width = "95px";
-div.style.height = "23px";
+div.style.width = "50%";
+div.style.height = "20px";
+div.style.left = "25%";
 div.style.opacity = "0";
           
           } else {
           document.getElementById("myVideo").setAttribute("onended", "replay()");
-div.style.width = "100px";
+div.style.width = "100%";
 div.style.height = "23px";
+div.style.left = "0%";
 div.style.opacity = "1";
           }
   }
