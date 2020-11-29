@@ -16,7 +16,7 @@
 </head>
 <html>
 
-<body>
+<body onload="alert();">
     <div class="loopDiv" id="loopDiv">
     </div>
     <div class="clipWrapper" onclick="video.paused ? video.play() : video.pause();">
@@ -106,8 +106,6 @@
         <video playsinline autoplay id="myVideo" onended="next();">
         </video>
     </div>
-
-    <button onclick="alert()">Try it</button>
 
     <style>
         * {
