@@ -1,4 +1,271 @@
+<!DOCTYPE html>
+<html>
+
 <head>
+    <meta charset="UTF-8" />
     <title>Luxia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Luxia's Website">
+    <meta name="keywords" content="luxia, Luxia, lux1a, Luxia ch, luxia ch, Luxia.ch, luxia.ch">
+    <meta name="author" content="Luxia">
+    <meta property="og:title" content="Luxia" />
+    <meta property="og:description" content="Luxia's Website">
+    <meta property="og:type" content="website">
+    <meta property=“og:site_name“ content=“Luxia“>
 </head>
-<h1>WIP</h1> <!--(luxia.ch/indexTest) there are only random anime clips--!>
+<html>
+
+    <div class="loopDiv" id="loopDiv">
+    </div>
+    <div class="clipWrapper" onclick="video.paused ? video.play() : video.pause();">
+        <div class="svg-clipped">
+            <svg xmlns="http://www.w3.org/2000/svg" width="330" height="91.1" viewBox="0 0 330 91.1">
+                <defs>
+                    <clipPath id="svgPath">
+                        <path id="Path_2" data-name="Path 2"
+                            d="M104.2,4.7V6.4a3.74,3.74,0,0,1-1,2.5L52.5,59.4A8.767,8.767,0,0,1,46.2,62H24.6a3.068,3.068,0,0,1-2.2-5.2L77.3,1.6a3.471,3.471,0,0,1,2.5-1h20.6a3.946,3.946,0,0,1,2.5,1h0A4.387,4.387,0,0,1,104.2,4.7Z"
+                            fill="#FFFFFF" />
+                        <path id="Path_3" data-name="Path 3"
+                            d="M90.3,70.5a3.076,3.076,0,0,1,3,3v2.3a2.878,2.878,0,0,1-.9,2.1L80,90.1a2.723,2.723,0,0,1-2.1.9H5.6a3.946,3.946,0,0,1-2.5-1l-2-2a3.471,3.471,0,0,1-1-2.5,3.946,3.946,0,0,1,1-2.5l9.1-9.2a11.5,11.5,0,0,1,8.2-3.4"
+                            fill="#FFFFFF" />
+                        <path id="Path_1" data-name="Path 1"
+                            d="M124.3,1.7,72.5,53.9a3.864,3.864,0,0,0-1.1,2.7h0a3.864,3.864,0,0,0,1.1,2.7l1.6,1.6A3.864,3.864,0,0,0,76.8,62h65.3a3.864,3.864,0,0,0,2.7-1.1l22.3-22.3a3.864,3.864,0,0,0,1.1-2.7V32.1a3.864,3.864,0,0,0-1.1-2.7l-4.2-4.2a3.864,3.864,0,0,0-2.7-1.1h-6.7a3.864,3.864,0,0,0-2.7,1.1L135.9,40a3.864,3.864,0,0,1-2.7,1.1H114.5a.462.462,0,0,1-.3-.8L145.5,9a3.864,3.864,0,0,0,1.1-2.7V5.2a3.864,3.864,0,0,0-1.1-2.7l-.7-.7A3.864,3.864,0,0,0,142.1.7H127A3.394,3.394,0,0,0,124.3,1.7Z"
+                            fill="#FFFFFF" />
+                        <path id="Path_4" data-name="Path 4"
+                            d="M276.5,1.4,234.4,43.5a2.878,2.878,0,0,0-.9,2.1h0a2.878,2.878,0,0,0,.9,2.1l3.1,3.1a2.878,2.878,0,0,0,2.1.9h14.2a2.878,2.878,0,0,0,2.1-.9l42-42a2.878,2.878,0,0,0,.9-2.1V3.9a2.878,2.878,0,0,0-.9-2.1l-.4-.4a2.878,2.878,0,0,0-2.1-.9H278.6A3.577,3.577,0,0,0,276.5,1.4Z"
+                            fill="#FFFFFF" />
+                        <path id="Path_5" data-name="Path 5"
+                            d="M325.6,0h-.8A4.3,4.3,0,0,0,322,1.1l-69,69a8.625,8.625,0,0,1-6.1,2.5H213.6a1.656,1.656,0,0,0-1.2.5l-12,12a1.845,1.845,0,0,0-.5,1.2v.8a1.656,1.656,0,0,0,.5,1.2l1.9,1.9a1.845,1.845,0,0,0,1.2.5h56.1a1.656,1.656,0,0,0,1.2-.5l19.8-19.8a1.845,1.845,0,0,1,1.2-.5h12.5a1.656,1.656,0,0,0,1.2-.5l5.5-5.5a1.845,1.845,0,0,0,.5-1.2V57.5a1.685,1.685,0,0,0-1.7-1.7h0a1.7,1.7,0,0,1-1.2-2.9l31-31a1.845,1.845,0,0,0,.5-1.2V4.4a3.69,3.69,0,0,0-1-2.4l-.9-.9A3.467,3.467,0,0,0,325.6,0Z"
+                            fill="#FFFFFF" />
+                        <path id="Path_6" data-name="Path 6"
+                            d="M325.7,35.5h-1.1a2.9,2.9,0,0,0-2.3,1L310.2,48.6a3.445,3.445,0,0,0-1,2.3V66.4a2.9,2.9,0,0,1-1,2.3L294,83a3.445,3.445,0,0,0-1,2.3v2.3a2.9,2.9,0,0,0,1,2.3h0a3.445,3.445,0,0,0,2.3,1h18.2a2.9,2.9,0,0,0,2.3-1L329,77.8a3.445,3.445,0,0,0,1-2.3V39.8a2.9,2.9,0,0,0-1-2.3l-1-1A3.445,3.445,0,0,0,325.7,35.5Z"
+                            fill="#FFFFFF" />
+                        <path id="Path_7" data-name="Path 7"
+                            d="M220.6,47.8a3.118,3.118,0,0,0-2.1-.9h-2.7a2.878,2.878,0,0,0-2.1.9L207,54.5a3.118,3.118,0,0,0-.9,2.1v1.8a2.878,2.878,0,0,0,.9,2.1l4.9,4.9a3.118,3.118,0,0,0,2.1.9h17.8a2.9,2.9,0,0,0,2-5Z"
+                            fill="#FFFFFF" />
+                        <path id="Path_8" data-name="Path 8"
+                            d="M177,31.9a4.046,4.046,0,0,0,5.6,0l8-8a3.924,3.924,0,0,0,0-5.5l-16.5-17A3.784,3.784,0,0,0,171.3.2H155.1a4.3,4.3,0,0,0-2.8,1.1l-.2.2a3.784,3.784,0,0,0-1.2,2.8,3.949,3.949,0,0,0,1.2,2.8Z"
+                            fill="#FFFFFF" />
+                        <path id="Path_9" data-name="Path 9"
+                            d="M250.1.4H226.3A5.521,5.521,0,0,0,222.4,2L154,70.4H116.5a2.878,2.878,0,0,0-2.1.9L102,84.2a3.037,3.037,0,0,0-.8,2.1v.5a2.878,2.878,0,0,0,.9,2.1l1.3,1.3a3.333,3.333,0,0,0,2.1.9h58.3a2.724,2.724,0,0,0,2.1-.9l1-1,.3-.3,30.5-30.5a5.7,5.7,0,0,0,1.6-3.9,5.7,5.7,0,0,1,1.6-3.9l9.3-9.3a5.7,5.7,0,0,1,3.9-1.6h2.3a5.521,5.521,0,0,0,3.9-1.6L255.1,3V2.5A7.119,7.119,0,0,0,250.1.4Z"
+                            fill="#FFFFFF" />
+
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+    </div>
+    <div class="SVGDiv" id="SVGDiv">
+        <svg class="SVGLogo" id="SVGLogo" xmlns="http://www.w3.org/2000/svg" width="330" height="91.1"
+            viewBox="0 0 330 91.1">
+            <g class="Luxia" id="Luxia" transform="translate(-0.1)">
+                <g id="U" onclick="">
+                    <path id="Path_1" data-name="Path 1"
+                        d="M124.3,1.7,72.5,53.9a3.864,3.864,0,0,0-1.1,2.7h0a3.864,3.864,0,0,0,1.1,2.7l1.6,1.6A3.864,3.864,0,0,0,76.8,62h65.3a3.864,3.864,0,0,0,2.7-1.1l22.3-22.3a3.864,3.864,0,0,0,1.1-2.7V32.1a3.864,3.864,0,0,0-1.1-2.7l-4.2-4.2a3.864,3.864,0,0,0-2.7-1.1h-6.7a3.864,3.864,0,0,0-2.7,1.1L135.9,40a3.864,3.864,0,0,1-2.7,1.1H114.5a.462.462,0,0,1-.3-.8L145.5,9a3.864,3.864,0,0,0,1.1-2.7V5.2a3.864,3.864,0,0,0-1.1-2.7l-.7-.7A3.864,3.864,0,0,0,142.1.7H127A3.394,3.394,0,0,0,124.3,1.7Z"
+                        fill="transparent" />
+                </g>
+                <g id="L" onclick="">
+                    <path id="Path_2" data-name="Path 2"
+                        d="M104.2,4.7V6.4a3.74,3.74,0,0,1-1,2.5L52.5,59.4A8.767,8.767,0,0,1,46.2,62H24.6a3.068,3.068,0,0,1-2.2-5.2L77.3,1.6a3.471,3.471,0,0,1,2.5-1h20.6a3.946,3.946,0,0,1,2.5,1h0A4.387,4.387,0,0,1,104.2,4.7Z"
+                        fill="transparent" />
+                    <path id="Path_3" data-name="Path 3"
+                        d="M90.3,70.5a3.076,3.076,0,0,1,3,3v2.3a2.878,2.878,0,0,1-.9,2.1L80,90.1a2.723,2.723,0,0,1-2.1.9H5.6a3.946,3.946,0,0,1-2.5-1l-2-2a3.471,3.471,0,0,1-1-2.5,3.946,3.946,0,0,1,1-2.5l9.1-9.2a11.5,11.5,0,0,1,8.2-3.4"
+                        fill="transparent" />
+                </g>
+                <g id="I">
+                    <path id="Path_4" data-name="Path 4"
+                        d="M276.5,1.4,234.4,43.5a2.878,2.878,0,0,0-.9,2.1h0a2.878,2.878,0,0,0,.9,2.1l3.1,3.1a2.878,2.878,0,0,0,2.1.9h14.2a2.878,2.878,0,0,0,2.1-.9l42-42a2.878,2.878,0,0,0,.9-2.1V3.9a2.878,2.878,0,0,0-.9-2.1l-.4-.4a2.878,2.878,0,0,0-2.1-.9H278.6A3.577,3.577,0,0,0,276.5,1.4Z"
+                        fill="transparent" />
+                </g>
+                <g id="A" onclick="MAL();">
+                    <path id="Path_5" data-name="Path 5"
+                        d="M325.6,0h-.8A4.3,4.3,0,0,0,322,1.1l-69,69a8.625,8.625,0,0,1-6.1,2.5H213.6a1.656,1.656,0,0,0-1.2.5l-12,12a1.845,1.845,0,0,0-.5,1.2v.8a1.656,1.656,0,0,0,.5,1.2l1.9,1.9a1.845,1.845,0,0,0,1.2.5h56.1a1.656,1.656,0,0,0,1.2-.5l19.8-19.8a1.845,1.845,0,0,1,1.2-.5h12.5a1.656,1.656,0,0,0,1.2-.5l5.5-5.5a1.845,1.845,0,0,0,.5-1.2V57.5a1.685,1.685,0,0,0-1.7-1.7h0a1.7,1.7,0,0,1-1.2-2.9l31-31a1.845,1.845,0,0,0,.5-1.2V4.4a3.69,3.69,0,0,0-1-2.4l-.9-.9A3.467,3.467,0,0,0,325.6,0Z"
+                        fill="transparent" />
+                    <path id="Path_6" data-name="Path 6"
+                        d="M325.7,35.5h-1.1a2.9,2.9,0,0,0-2.3,1L310.2,48.6a3.445,3.445,0,0,0-1,2.3V66.4a2.9,2.9,0,0,1-1,2.3L294,83a3.445,3.445,0,0,0-1,2.3v2.3a2.9,2.9,0,0,0,1,2.3h0a3.445,3.445,0,0,0,2.3,1h18.2a2.9,2.9,0,0,0,2.3-1L329,77.8a3.445,3.445,0,0,0,1-2.3V39.8a2.9,2.9,0,0,0-1-2.3l-1-1A3.445,3.445,0,0,0,325.7,35.5Z"
+                        fill="transparent" />
+                </g>
+                <g id="X">
+                    <path id="Path_7" data-name="Path 7"
+                        d="M220.6,47.8a3.118,3.118,0,0,0-2.1-.9h-2.7a2.878,2.878,0,0,0-2.1.9L207,54.5a3.118,3.118,0,0,0-.9,2.1v1.8a2.878,2.878,0,0,0,.9,2.1l4.9,4.9a3.118,3.118,0,0,0,2.1.9h17.8a2.9,2.9,0,0,0,2-5Z"
+                        fill="transparent" />
+                    <path id="Path_8" data-name="Path 8"
+                        d="M177,31.9a4.046,4.046,0,0,0,5.6,0l8-8a3.924,3.924,0,0,0,0-5.5l-16.5-17A3.784,3.784,0,0,0,171.3.2H155.1a4.3,4.3,0,0,0-2.8,1.1l-.2.2a3.784,3.784,0,0,0-1.2,2.8,3.949,3.949,0,0,0,1.2,2.8Z"
+                        fill="transparent" />
+                    <path id="Path_9" data-name="Path 9"
+                        d="M250.1.4H226.3A5.521,5.521,0,0,0,222.4,2L154,70.4H116.5a2.878,2.878,0,0,0-2.1.9L102,84.2a3.037,3.037,0,0,0-.8,2.1v.5a2.878,2.878,0,0,0,.9,2.1l1.3,1.3a3.333,3.333,0,0,0,2.1.9h58.3a2.724,2.724,0,0,0,2.1-.9l1-1,.3-.3,30.5-30.5a5.7,5.7,0,0,0,1.6-3.9,5.7,5.7,0,0,1,1.6-3.9l9.3-9.3a5.7,5.7,0,0,1,3.9-1.6h2.3a5.521,5.521,0,0,0,3.9-1.6L255.1,3V2.5A7.119,7.119,0,0,0,250.1.4Z"
+                        fill="transparent" />
+                </g>
+            </g>
+        </svg>
+    </div>
+
+    <div class="fullscreen">
+        <video playsinline autoplay loop id="myVideo" src="/02.mp4">
+        </video>
+    </div>
+
+    <style>
+        * {
+            transition: all 0.15s ease-in-out;
+            overflow: hidden;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+        }
+
+        .clipWrapper {
+            background: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0%;
+            left: 0%;
+            z-index: -1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .svg-clipped {
+            background-color: none;
+            position: relative;
+            margin: 0 auto;
+            height: 91.1px;
+            width: 330px;
+            transform: scale(2);
+            z-index: 10;
+            -webkit-clip-path: url(#svgPath);
+            clip-path: url(#svgPath);
+            backdrop-filter: blur(35px) brightness(120%) saturate(115%);
+            -webkit-backdrop-filter: blur(35px) brightness(120%) saturate(115%);
+        }
+
+        .SVGDiv {
+            background: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0%;
+            left: 0%;
+            z-index: 20;
+            pointer-events: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .SVGLogo {
+            pointer-events: all;
+            background-color: none;
+            position: relative;
+            margin: 0 auto;
+            height: 91.1px;
+            width: 330px;
+            transform: scale(2);
+        }
+
+        .loopDiv {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0%;
+            left: 0%;
+            z-index: 21;
+            pointer-events: none;
+        }
+
+        .loopDiv .div {
+            position: absolute;
+            bottom: 0%;
+            left: 35%;
+        }
+
+        .SVGLogo .Luxia #L:hover #Path_2 {
+            fill: rgb(255, 255, 255);
+            opacity: 80%
+        }
+
+        .SVGLogo .Luxia #L:hover #Path_3 {
+            fill: rgb(255, 255, 255);
+            opacity: 80%
+        }
+
+        .SVGLogo .Luxia #U:hover #Path_1 {
+            fill: rgb(255, 255, 255);
+            opacity: 80%
+        }
+
+        .SVGLogo .Luxia #X:hover #Path_7 {
+            fill: rgb(255, 255, 255);
+            opacity: 80%
+        }
+
+        .SVGLogo .Luxia #X:hover #Path_8 {
+            fill: rgb(255, 255, 255);
+            opacity: 80%
+        }
+
+        .SVGLogo .Luxia #X:hover #Path_9 {
+            fill: rgb(255, 255, 255);
+            opacity: 80%
+        }
+
+        .SVGLogo .Luxia #I:hover #Path_4 {
+            fill: rgb(255, 255, 255);
+            opacity: 80%
+        }
+
+        .SVGLogo .Luxia #A:hover #Path_5 {
+            fill: rgb(255, 255, 255);
+            opacity: 80%
+        }
+
+        .SVGLogo .Luxia #A:hover #Path_6 {
+            fill: rgb(255, 255, 255);
+            opacity: 80%;
+        }
+
+        .full-height {
+            height: 100%;
+        }
+
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+
+        }
+
+
+        @media only screen and (max-width: 5000px) {
+            #myVideo {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                min-width: 100%;
+                min-height: 100%;
+                width: auto;
+                height: auto;
+                z-index: -100;
+                transform: translateX(-50%) translateY(-50%);
+            }
+
+            @media only screen and (max-width: 750px) {
+                .svg-clipped {
+                    transform: scale(1.2);
+                }
+
+                .SVGLogo {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    </style>
+
+</body>
+
+</html>
