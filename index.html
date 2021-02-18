@@ -101,9 +101,9 @@
     </svg>
 </div>
 
-<div class="fullscreen">
+<div class="fullscreen" onclick="this.paused ? this.play() : this.pause();>
     <!--<video playsinline muted autoplay loop id="myVideo" src="/video.mp4">-->
-    <video playsinline muted autoplay loop id="myVideo" src="/miyauchi_renge_flute.mp4">
+    <video playsinline autoplay loop id="myVideo" src="/miyauchi_renge_flute.mp4">
     </video>
 </div>
 
@@ -133,6 +133,10 @@
         padding: 0 0 0 0;
         margin: 0 0 0 0;
     }
+                                                                             
+    .fullscreen {
+                                                                             z-index: -10;
+                                                                             }
 
     .clipWrapper {
         background: none;
